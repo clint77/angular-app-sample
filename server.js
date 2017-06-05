@@ -16,7 +16,7 @@ var db;
 // Connect to the database before starting the application server.
 mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   if (err) {
-    console.log(err);
+    console.log(err, "database error");
     process.exit(1);
   }
 
